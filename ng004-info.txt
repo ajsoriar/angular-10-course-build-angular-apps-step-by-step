@@ -1,0 +1,5 @@
+npm install bootstrap@3
+
+Bootstrap requires jquery to run all its components, so ...
+
+npm install jquery

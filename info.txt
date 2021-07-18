@@ -1,0 +1,9 @@
+ng serve inside projects to start
+
+- to create a new project:
+	
+	ng new ng003-new-component
+
+- To generate a new component in a project:
+
+	ng generate component new-component

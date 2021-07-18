@@ -1,0 +1,81 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  h1{
+    color: yellow;
+  }
+</style>
+
+<div class="toolbar" role="banner">
+  <h1>Hello world 2!</h1>
+  <h2>{{title}}</h2>
+  <h3>{{description}}</h3>
+  <app-new-component></app-new-component>
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-lg-6 col-md-6 col-lg-push-3 col-md-push-3">
+          <div class="text-center">
+              <h1><strong>Hello World!<br> {{title2}}</strong></h1>
+              <hr>
+              <p>Welcome to my first Angular project</p>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-lg-push-3 col-md-push-3">
+      <form>
+        <div class="form-group">
+          <select class="form-control">
+            <option *ngFor="let month of months">{{month}}</option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-md-8 col-lg-push-2 col-md-push-2">
+      <ng-container *ngIf="isAvailable; else elseTemplateName" >
+          <div class="alert alert-success">
+            <p>
+              <strong>Note: </strong>Yes it is available
+            </p>
+          </div>
+      </ng-container>
+      <ng-template #elseTemplateName>
+        <div class="alert alert-danger">
+          <p>
+            <strong>Note: </strong>No it is not available
+          </p>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+  <div class="row">
+    <app-new-andres-component></app-new-andres-component>
+    <app-new-andres-component></app-new-andres-component>
+    <app-new-andres-component></app-new-andres-component>
+    <app-new-andres-component></app-new-andres-component>
+    <app-new-andres-component></app-new-andres-component>
+    <app-new-andres-component></app-new-andres-component>
+    <app-new-andres-component></app-new-andres-component>
+  </div>
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<router-outlet></router-outlet>
